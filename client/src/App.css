@@ -1,0 +1,10 @@
+/* NOTA: Definimos que las tres secciones principales (Header, Main y Footer) queden estilizadas en columnas con Flex*/
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+div#app > main {
+  flex-grow: 1;
+}

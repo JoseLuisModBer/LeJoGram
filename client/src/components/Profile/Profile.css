@@ -1,0 +1,104 @@
+.div-profile-datacontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-profile-datacontainer > h2 {
+  padding-top: 1rem;
+  font-size: 1.7rem;
+  color: var(--DarkBlue);
+  font-weight: bold;
+  text-align: center;
+}
+
+.div-profile-datacontainer > .p-profile-sectiontitle {
+  padding-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.div-profile-datacontainer > .avatar-photo {
+  width: 10rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.div-profile-datacontainer > p,
+time {
+  text-align: center;
+}
+
+/*--------------------------------------------------------------------*/
+
+.ul-profile-photocontainer {
+  background: var(--degradado);
+  border: 2px solid rgb(118, 118, 118);
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  list-style: none;
+}
+
+.ul-profile-photocontainer > li > img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/*#####################################################################*/
+
+/*
+### RESPONSIVE PARA TABLET ##
+#############################
+#### MEDIA QUERY: 700px #####
+#############################
+*/
+@media (min-width: 700px) {
+  .div-profile-datacontainer > h2 {
+    font-size: 2.5rem;
+  }
+
+  .div-profile-datacontainer > .p-profile-sectiontitle {
+    font-size: 1.7rem;
+  }
+
+  .ul-profile-photocontainer {
+    margin: 1.5rem;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+/*#####################################################################*/
+
+/*
+##### RESPONSIVE PARA PC ####
+#############################
+#### MEDIA QUERY: 1200px ####
+#############################
+*/
+@media (min-width: 1200px) {
+  .div-profile-datacontainer > h2 {
+    font-size: 3.5rem;
+  }
+
+  .div-profile-datacontainer > .p-profile-sectiontitle {
+    font-size: 2rem;
+  }
+
+  .ul-profile-photocontainer {
+    margin: 1.5rem 20rem;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .ul-profile-photocontainer > li > img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+  }
+}

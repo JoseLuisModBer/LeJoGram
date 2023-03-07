@@ -1,0 +1,141 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--degradado);
+  padding: 1rem;
+  color: black;
+}
+
+/*--------------------------------------------------*/
+
+header > a {
+  text-decoration: none;
+}
+
+header > a > .div-logo-h1-container {
+  display: flex;
+  flex-direction: column;
+}
+
+header > a > .div-logo-h1-container > #logo {
+  width: 100%;
+  height: 50px;
+}
+
+header a > .div-logo-h1-container > p {
+  font-size: 1.5rem;
+  color: black;
+}
+
+/*--------------------------------------------------*/
+
+/*Formato para que los dos div de botones estén en row*/
+header > .nav-buttons {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+/*Formato para que cada div de botones esté en column*/
+header > .nav-buttons > .div-navlink-container {
+  display: flex;
+  flex-direction: column;
+}
+
+header > .nav-buttons > .div-navlink-container > a > .button,
+header > .nav-buttons > .div-navlink-container > .button {
+  padding: 0.3rem 0.5rem;
+  width: 100px;
+  height: 35px;
+  font-size: 1rem;
+  text-align: center;
+  background-color: var(--DarkBlue);
+  color: white;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+header > .nav-buttons > .div-navlink-container > a > .button:hover,
+header > .nav-buttons > .div-navlink-container > .button:hover {
+  background-color: var(--blue);
+  color: black;
+}
+
+header > .nav-buttons > .div-navlink-container > a:first-child {
+  margin-bottom: 1rem;
+}
+
+header > .nav-buttons > .div-navlink-container > a > .button > .p-username {
+  align-self: center;
+  font-size: 1rem;
+  font-family: 'Oregano', sans-serif;
+}
+
+/*#####################################################################*/
+
+/*
+### RESPONSIVE PARA TABLET ##
+#############################
+#### MEDIA QUERY: 700px #####
+#############################
+*/
+@media (min-width: 700px) {
+  header > .nav-buttons > .div-navlink-container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  header > .nav-buttons > .div-navlink-container > a > .button,
+  header > .nav-buttons > .div-navlink-container > .button {
+    width: 120px;
+    font-size: 1.2rem;
+  }
+
+  header > .nav-buttons > .div-navlink-container > a > .button > .p-username {
+    font-size: 1.2rem;
+  }
+}
+
+/*#####################################################################*/
+
+/*
+##### RESPONSIVE PARA PC ####
+#############################
+#### MEDIA QUERY: 1200px ####
+#############################
+*/
+@media (min-width: 1200px) {
+  header > a > .div-logo-h1-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  header > a > .div-logo-h1-container > #logo {
+    width: 100%;
+    height: 70px;
+  }
+
+  header > a > .div-logo-h1-container > p {
+    font-size: 2.5rem;
+    align-self: center;
+  }
+
+  /*--------------------------------------------------*/
+
+  header > .nav-buttons > .div-navlink-container:last-of-type {
+    margin-right: 1.5rem;
+  }
+
+  header > .nav-buttons > .div-navlink-container > a > .button,
+  header > .nav-buttons > .div-navlink-container > .button {
+    width: 150px;
+    height: 45px;
+    font-size: 1.5rem;
+  }
+
+  header > .nav-buttons > .div-navlink-container > a > .button > .p-username {
+    font-size: 1.5rem;
+  }
+}

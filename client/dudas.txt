@@ -1,0 +1,61 @@
+RESUELTAS:
+
+- Subir carpeta cn cliente y servidor a gitlab.
+- LIKES | El botón de likes solo funciona una ronda. Puedes quitar y poner pero luego peta o poner y quitar pero luego peta.
+- PROFILE | Asesóranos sobre cómo hacer el perfil de usuario con sus fotos sin login. La única forma que se nos ocurre es mandar props desde el navlink del nombre de usuario de cada entrada al componente Profile.
+- CSS movil botones header.
+- Crear página para datos de usuario y entradas de ese usuario.
+
+- Modificar CSS Entries para que los márgenes entre entries afecten a la primera y la últma entrada también.
+- Hacer el favicom con el Logo.
+- DESLOGUE: Si estamos logueados y dentro de la sección ownprofile o publicar, necesitaríamos hacer que si pulsamo logout redirija automanticamente a la página de inicio al no haber token.
+- COMENTARIOS | Al enviar un comentario no se carga, hace falta recargar la página para que aparezca. En la DB la hora y fecha de creación son correctas pero en el front no.
+-GITLAB | nos da error el git push tras haberlo hecho colaborativo.
+  - Corregir las rutas de cada compoennte para que no se pueda acceder por url cuando no corresponde: if (token) return <Navigate to="/" />; cambiando a not token si corrsponde.
+- AYUDA OPCIONAL BORRAR ENTRADAS | No se nos pedía un controlador para borrar entradas. Lo hemos implementado pero tenemos dos dudas. Qué es lo de owner. Y en el backen tenemos que poner user_id?
+- Css para tablet.
+- CSS para PC.
+- Cambiar todos los entrie por entry.
+- oculatar caja comentarios.
+- OPCIONAL: Crear Backend y Front con Botón de borrar entrada si eres el usuario creador.
+
+- OPCIONAL: Crear Backend y Front para eliminar usuarios.
+- Revisar todo el Backend.
+- Revisar todo el front.
+
+- OPCIONAL: Que un usuario logueado pueda elegir un avatar de una lista de avatares.
+- Hacer el Readme.md del front.
+
+
+Miércoles 1 marzo:
+- Modificación en OwnProfile condicional ? : para que muestre "Este usuario no tiene fotografías" cuando todavía no las haya.
+- Modificación del CSS de Comments. Error de ruta en time y en el p. | Meter avatar a cada comentario | Modificar el useEffect de EntrySearch con un useState [loaded, setLoaded], que mandamos por props hasta Comments para que cada vez que haya cambios en comentarios, se ejecute de nuevo el useEffect que pilla los comentarios (para que la foto del usuario que comenta se cargue al hacer el comentario, que antes daba error).
+
+viernes 3 maro:
+- Revisión final del proyecto con deivid
+- OPCIONAL: Crear Backend y Front para modificar datos de perfil
+
+DUDAS SERVER:
+- Server.js - linea 13 - sobra ese path?
+- Server.js - linea 86 - por qué usas isAuthOptional en vez de IsAuth?
+- Helpers.js - linea 7 - Por qué esta oscuro el UPLOADS_DIR?
+- Qué diferencia real hay entre isAuth y isAuthOptional?
+
+DUDAS FRONT:
+- OwnProfile - linea 15 - Es distinto Navigate que navigate? nos sale como si no estuviese siendo usado...
+
+DUDAS NO RESUELTAS:
+-- Personalizar error de intentar dar like sin estar logueado.
+-- Que cosas creadas por npx create-react-app (vite) se pueden borrar?
+- Cómo hacer que el scroll de los comentarios por defecto se vaya al final cuando creas un nuevo comentario?
+
+
+COSAS PENDIENTES:
+-- Cómo subir un deploy del proyecto a githubpages u similar.
+
+CORRECCIONES FINALES:
+- Correcciones backend borrar usuario.
+- Correcciones frontend borrar usuario (hacer que se recarge la página de inicio para que no muestre las entradas del usuario ya borrado).
+- correcciones fechas
+- eliminado de console logs residuales.
+- Testeo final del funcionamiento de la aplicación web.

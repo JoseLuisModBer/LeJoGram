@@ -1,0 +1,167 @@
+.div-comments-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--GrisOscuro);
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.div-comments-container > h4 {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.p-nocomments {
+  text-align: center;
+  font-style: italic;
+}
+
+/*--------------------------------------------------*/
+
+.div-comments-container > .all-comments-container-visible {
+  margin: 0.3rem;
+  padding: 0.5rem;
+  width: auto;
+  height: 10rem;
+  overflow: scroll;
+  background-color: var(--GrisClaro);
+}
+
+.div-comments-container > .all-comments-container-hidden {
+  visibility: hidden;
+}
+
+.div-date-comment-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.div-date-comment-container > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.div-date-comment-container > div > .avatar-photo {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+  align-self: center;
+}
+
+.div-date-comment-container > div > time {
+  align-self: center;
+}
+
+.div-date-comment-container > div > time > strong {
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+}
+
+.div-date-comment-container > .ul-comments > li {
+  list-style: none;
+  margin-top: 0.2rem;
+}
+
+.div-date-comment-container > .ul-comments > li > p {
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  text-align: start;
+}
+
+/*--------------------------------------------------*/
+
+.form-comments-container {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 0.2rem;
+}
+
+.form-comments-container > input {
+  width: 100%;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  border: 1px solid #767676;
+  padding: 0.3rem 0.5rem;
+}
+
+.form-comments-container > button {
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+  font-size: 1.3rem;
+}
+
+.comment-form-container-hidden {
+  visibility: hidden;
+}
+
+/*#####################################################################*/
+
+/*
+### RESPONSIVE PARA TABLET ##
+#############################
+#### MEDIA QUERY: 700px #####
+#############################
+*/
+@media (min-width: 700px) {
+  .div-comments-container > .all-comments-container-visible {
+    margin: 0.3rem;
+    padding: 0.5rem;
+    width: auto;
+    height: 10rem;
+  }
+
+  .div-date-comment-container > div > .avatar-photo {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .div-date-comment-container > div > time > strong {
+    font-size: 1.3rem;
+    padding-top: 0.1rem;
+  }
+
+  .div-date-comment-container > .ul-comments > li > p {
+    font-size: 1.3rem;
+  }
+}
+
+/*#####################################################################*/
+
+/*
+##### RESPONSIVE PARA PC ####
+#############################
+#### MEDIA QUERY: 1200px ####
+#############################
+*/
+@media (min-width: 1200px) {
+  .div-comments-container > h4 {
+    font-size: 2rem;
+  }
+
+  /*--------------------------------------------------*/
+
+  .div-comments-container > .all-comments-container-visible {
+    margin: 0.3rem;
+    padding: 0.5rem;
+    width: auto;
+    height: 15rem;
+  }
+
+  .div-date-comment-container > div > .avatar-photo {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .div-date-comment-container > div > time > strong,
+  .div-date-comment-container > .ul-comments > li > p {
+    font-size: 1.5rem;
+  }
+
+  /*--------------------------------------------------*/
+
+  .form-comments-container > input {
+    font-size: 1.5rem;
+  }
+}

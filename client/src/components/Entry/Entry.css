@@ -1,0 +1,155 @@
+.li-entry {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.374);
+  background-color: #e6f9fd;
+  margin: 2rem 0;
+}
+
+/*--------------------------------------------------*/
+
+.li-entry > header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background: var(--degradado);
+}
+
+.li-entry > header > a {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.li-entry > header > a > .avatar-photo {
+  width: 3rem;
+}
+
+.li-entry > header > a > p {
+  font-weight: bold;
+  align-self: center;
+}
+
+/*--------------------------------------------------*/
+
+.li-entry > .div-place-slider-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.li-entry > .div-place-slider-description > p:first-child {
+  text-align: center;
+}
+
+.li-entry > .div-place-slider-description > p {
+  padding: 0.5rem;
+}
+.li-entry > .div-place-slider-description > p:last-child {
+  padding-left: 1rem;
+}
+
+/*--------------------------------------------------*/
+
+.li-entry > footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--degradado);
+}
+
+.li-entry > footer > .div-likescontainer {
+  display: flex;
+  align-items: center;
+}
+
+.li-entry > footer > .div-likescontainer > div.heart {
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  background-image: url('/heart_animation.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 2900%;
+}
+
+/* .li-entry > footer > .div-likescontainer > div.heart:hover {
+  background-position: right;
+} */
+
+.li-entry > footer > .div-likescontainer > div.heart.like {
+  animation: heart-burst 0.8s steps(28) 1;
+  animation-fill-mode: forwards;
+}
+
+.li-entry > footer > .div-likescontainer > p {
+  color: black;
+}
+
+@keyframes heart-burst {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
+
+/*--------------------------------------------------*/
+/* ESTO ES PARA EL BOTÓN DE BORRAR ENTRADAS */
+.li-entry > footer > .button {
+  margin-right: 1.5rem;
+  padding: 0.3rem 0.5rem;
+  width: auto;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: var(--DarkBlue);
+  color: white;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+/*#####################################################################*/
+
+/*
+##### RESPONSIVE PARA PC ####
+#############################
+#### MEDIA QUERY: 1200px ####
+#############################
+*/
+@media (min-width: 700px) {
+  .li-entry > header > a > .avatar-photo {
+    width: 5rem;
+  }
+}
+
+/*#####################################################################*/
+
+/*
+##### RESPONSIVE PARA PC ####
+#############################
+#### MEDIA QUERY: 1200px ####
+#############################
+*/
+@media (min-width: 1200px) {
+  .li-entry > header > a > p {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  /*--------------------------------------------------*/
+
+  .li-entry > footer > .div-likescontainer > div.heart {
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    background-image: url('/heart_animation.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 2900%;
+  }
+
+  /*--------------------------------------------------*/
+  /* ESTO ES PARA EL BOTÓN DE BORRAR ENTRADAS */
+  .li-entry > footer > .button {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,100 @@
+.main-login {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.main-login > h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
+  color: var(--DarkBlue);
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-login > form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.main-login > form > label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-login > form > input {
+  margin: 0rem 3rem 1rem 3rem;
+  padding: 0.3rem;
+  font-size: 1.3rem;
+  border: 1px solid black;
+}
+
+.main-login > form > button {
+  padding: 0.3rem 1rem;
+  margin-bottom: 1rem;
+  width: auto;
+  align-self: center;
+  font-size: 1rem;
+  text-align: center;
+  background-color: var(--DarkBlue);
+  color: white;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.main-login > form > button:hover {
+  background-color: var(--blue);
+  color: black;
+}
+
+/*#####################################################################*/
+
+/*
+### RESPONSIVE PARA TABLET ##
+#############################
+#### MEDIA QUERY: 700px #####
+#############################
+*/
+@media (min-width: 700px) {
+  .main-login > h2 {
+    font-size: 2.5rem;
+  }
+
+  .main-login > form > label {
+    font-size: 1.7rem;
+  }
+
+  .main-login > form > input {
+    margin: 0rem 6rem 1rem 6rem;
+  }
+}
+
+/*#####################################################################*/
+
+/*
+##### RESPONSIVE PARA PC ####
+#############################
+#### MEDIA QUERY: 1200px ####
+#############################
+*/
+@media (min-width: 1200px) {
+  .main-login > h2 {
+    font-size: 3.5rem;
+  }
+
+  .main-login > form > label {
+    font-size: 2rem;
+  }
+
+  .main-login > form > input {
+    margin: 0rem 20rem 1rem 20rem;
+  }
+
+  .main-login > form > button {
+    font-size: 1.5rem;
+  }
+}

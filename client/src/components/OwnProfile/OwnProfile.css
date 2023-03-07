@@ -1,0 +1,132 @@
+.div-ownprofile-container,
+.div-ownprofilebutton-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-ownprofile-container > h2 {
+  padding-top: 1rem;
+  font-size: 1.7rem;
+  color: var(--DarkBlue);
+  font-weight: bold;
+}
+
+.div-ownprofile-container > .p-ownprofile-sectiontitle {
+  padding-top: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/*--------------------------------------------------*/
+.div-ownprofile-container > .avatar-photo {
+  width: 10rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.div-ownprofile-container > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.div-ownprofile-container > div > select {
+  margin-right: 0.5rem;
+  font-size: 1.3rem;
+  padding: 0.1rem;
+}
+
+.div-ownprofile-container > div > input {
+  margin-right: 0.5rem;
+  font-size: 1.3rem;
+  padding: 0.1rem 0.5rem;
+}
+
+.div-ownprofile-container > div > button {
+  padding: 0.3rem 1rem;
+  width: auto;
+  font-size: 1rem;
+  background-color: var(--DarkBlue);
+  color: white;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.div-ownprofile-container > .avatar-photo-change {
+  width: 6rem;
+  align-self: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+
+.div-ownprofilebutton-container > a > button {
+  padding: 0.3rem 1rem;
+  margin: 1rem 0rem 2rem 0rem;
+  width: auto;
+  align-self: center;
+  font-size: 1rem;
+  text-align: center;
+  background-color: var(--DarkBlue);
+  color: white;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+/*#####################################################################*/
+
+/*
+### RESPONSIVE PARA TABLET ##
+#############################
+#### MEDIA QUERY: 700px #####
+#############################
+*/
+@media (min-width: 700px) {
+  .div-ownprofile-container > h2 {
+    font-size: 2.5rem;
+  }
+
+  .div-ownprofile-container > .p-ownprofile-sectiontitle {
+    font-size: 1.7rem;
+  }
+
+  .div-ownprofile-container > div > button,
+  .div-ownprofilebutton-container > a > button {
+    font-size: 1.2rem;
+  }
+}
+
+/*#####################################################################*/
+
+/*
+##### RESPONSIVE PARA PC ####
+#############################
+#### MEDIA QUERY: 1200px ####
+#############################
+*/
+@media (min-width: 1200px) {
+  .div-ownprofile-container > h2 {
+    font-size: 3.5rem;
+  }
+
+  .div-ownprofile-container > .p-ownprofile-sectiontitle {
+    font-size: 2rem;
+  }
+
+  /*--------------------------------------------------*/
+
+  .div-ownprofile-container > div > select,
+  .div-ownprofile-container > div > input {
+    font-size: 1.5rem;
+  }
+
+  .div-ownprofile-container > div > button,
+  .div-ownprofilebutton-container > a > button {
+    font-size: 1.5rem;
+  }
+}

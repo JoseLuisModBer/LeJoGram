@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Oregano&display=swap" rel="stylesheet');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --DarkBlue: #2678f3;
+  --blue: #adf0ff;
+  --red: #fddae1;
+  --GrisOscuro: #d3d3d3;
+  --GrisClaro: #e9e6e6;
+  --degradado: linear-gradient(to right, var(--blue), var(--red));
+}
+
+time {
+  font-size: 1.3rem;
+  font-family: 'Oregano', sans-serif;
+}
+
+p {
+  font-size: 1.5rem;
+  font-family: 'Oregano', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+input,
+select,
+label,
+button {
+  font-family: 'Oregano', sans-serif;
+}
+
+/*#####################################################################*/
+
+/*
+##### RESPONSIVE PARA PC ####
+#############################
+#### MEDIA QUERY: 1200px ####
+#############################
+*/
+@media (min-width: 1200px) {
+  time {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}

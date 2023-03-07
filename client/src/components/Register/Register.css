@@ -1,0 +1,112 @@
+.main-register {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.main-register > h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
+  color: var(--DarkBlue);
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-register > form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.main-register > form > .avatar-photo {
+  width: 10rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.main-register > form > label,
+.main-register > form > .p-as-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-register > form > input,
+.main-register > form > select {
+  margin: 0rem 3rem 1rem 3rem;
+  padding: 0.3rem;
+  font-size: 1.3rem;
+  border: 1px solid black;
+}
+
+.main-register > form > button {
+  padding: 0.3rem 1rem;
+  margin: 1rem 0rem 2rem 0rem;
+  width: auto;
+  align-self: center;
+  font-size: 1rem;
+  text-align: center;
+  background-color: var(--DarkBlue);
+  color: white;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.main-register > form > button:hover {
+  background-color: var(--blue);
+  color: black;
+}
+
+/*#####################################################################*/
+
+/*
+### RESPONSIVE PARA TABLET ##
+#############################
+#### MEDIA QUERY: 700px #####
+#############################
+*/
+@media (min-width: 700px) {
+  .main-register > h2 {
+    font-size: 2.5rem;
+  }
+
+  .main-register > form > label,
+  .main-register > form > .p-as-label {
+    font-size: 1.7rem;
+  }
+
+  .main-register > form > input,
+  .main-register > form > select {
+    margin: 0rem 6rem 1rem 6rem;
+  }
+}
+
+/*#####################################################################*/
+
+/*
+##### RESPONSIVE PARA PC ####
+#############################
+#### MEDIA QUERY: 1200px ####
+#############################
+*/
+@media (min-width: 1200px) {
+  .main-register > h2 {
+    font-size: 3.5rem;
+  }
+
+  .main-register > form > label,
+  .main-register > form > .p-as-label {
+    font-size: 2rem;
+  }
+
+  .main-register > form > input,
+  .main-register > form > select {
+    margin: 0rem 20rem 1rem 20rem;
+  }
+
+  .main-register > form > button {
+    font-size: 1.5rem;
+  }
+}
