@@ -1,9 +1,10 @@
 # **PROYECTO LEJOGRAM - FRONTEND (carpeta _"client"_):**
 
-## **1. AUTORES:**
+## **1. AUTORÍA / CONTACTO:**
 
-- Leticia Pérez Sanz.
-- Jose Luis Modroño Berdiñas.
+- Jose Luis Modroño Berdiñas: "[Link al perfil de LinkedIn de Jose Luis](https://www.linkedin.com/in/joseluismodro%C3%B1oberdi%C3%B1as/)"
+
+- Leticia Pérez Sanz: "[Link al perfil de LinkedIn de Leticia](https://www.linkedin.com/in/leticia-perez-sanz-89d/)"
 
 #
 
@@ -102,14 +103,6 @@ Puedes consultar la lista final de controladores y querys en el archivo "README.
 ## **3. INSTALACIÓN Y CONFIGURACIÓN:**
 
 Para ver cómo configurar tanto el FRONTEND como el BACKEND de _**LeJoGram**_ consulta el archivo README.md que encontrarás en la raíz del respositorio (a la altura de las carpetas _"documentation"_, _"server"_ y _"client"_).
-
-#
-
-## **4. CONTACTO:**
-
-### Jose Luis Modroño Berdiñas: "[Link al perfil de LinkedIn de Jose Luis](https://www.linkedin.com/in/joseluismodro%C3%B1oberdi%C3%B1as/)"
-
-### Leticia Pérez Sanz: "[Link al perfil de LinkedIn de Leticia](https://www.linkedin.com/in/leticia-perez-sanz-89d/)"
 
 #
 

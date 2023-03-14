@@ -1,9 +1,10 @@
 # **PROYECTO "LEJOGRAM":**
 
-## **1. AUTORÍA:**
+## **1. AUTORÍA / CONTACTO:**
 
-- Leticia Pérez Sanz.
-- Jose Luis Modroño Berdiñas.
+- Jose Luis Modroño Berdiñas: "[Link al perfil de LinkedIn de Jose Luis](https://www.linkedin.com/in/joseluismodro%C3%B1oberdi%C3%B1as/)"
+
+- Leticia Pérez Sanz: "[Link al perfil de LinkedIn de Leticia](https://www.linkedin.com/in/leticia-perez-sanz-89d/)"
 
 #
 
@@ -164,14 +165,6 @@ El terminal mostrará una url que pdrás pinchar para visualizar _**LeJoGram**_ 
 Ya estás listo para probar _**LeJoGram**_. Te recomendamos crear dos usuarios distintos para poder crear publicaciones con cada uno ha probar todas las funcionalidades de nuestra aplicación haciendo que interactúen entre ellos.
 
 En "[este vídeo](https://youtu.be/75-fqlN8gjg)" puedes ver una breve explicación del funcionamiento de _**LeJoGram**_ y los archivos y utilidades que hemos empleado.
-
-#
-
-## **6. CONTACTO:**
-
-### Jose Luis Modroño Berdiñas: "[Link al perfil de LinkedIn de Jose Luis](https://www.linkedin.com/in/joseluismodro%C3%B1oberdi%C3%B1as/)"
-
-### Leticia Pérez Sanz: "[Link al perfil de LinkedIn de Leticia](https://www.linkedin.com/in/leticia-perez-sanz-89d/)"
 
 #
 
