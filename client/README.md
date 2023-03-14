@@ -1,80 +1,56 @@
-# PROYECTO LEJOGRAM
+# **PROYECTO LEJOGRAM - FRONTEND (carpeta _"client"_):**
 
-## AUTORES:
+## **1. AUTORES:**
 
 - Leticia Pérez Sanz.
 - Jose Luis Modroño Berdiñas.
 
-## INTRODUCCIÓN:
+#
 
-LeJoGram es nuestro proyecto final del Bootcamp de diseño web fullstack que hemos cursado en Hackaboss.
+## **2. PLANTEAMIENTO DEL FRONTEND:**
 
-El objetivo del proyecto es desarrollar el backend y el frontend de una aplicación similar a instagram.
+El proyecto _**LeJoGram**_ consta de tres carpetas principales:
 
-Dado que el backend ya cuenta con su propio README.md explicativo, en este caso nos centraremos en explicar la parte del frontend (un resumen explicativo del proceso, los problemas con lo que nos hemos topado y la forma en que los hemos resuelto).
-
-## REQUISITOS MÍNIMOS EXIGIDOS PARA EL PROYECTO:
-
-Partimos de un pdf en el que se nos indicaban los objetivos mínimos a alcanzar en el proyecto:
-
-- Implementar una API que permita publicar fotos (añadiendo o no textos) y que otras personas puedan verlas (hacer el backend y el frontend).
-
-  - **LOS USUARIOS ANÓNIMOS PODRÁN:**
-
-    - Ver las últimas fotos publicadas por otros usuarios.
-    - Ver el perfil de un usuario con su galería de fotos.
-    - Buscar fotos (por su texto descriptivo).
-    - Registrarse.
-    - Loguearse.
-
-  - **LOS USUARIOS REGISTRADOS PODRÁN:**
-
-    - Hacer una publicación de una foto (la foto debe ajustarse automáticamente a un tamaño máximo y unas proporciones establecidas por la plataforma).
-    - Añadir una descripción a sus publicaciones.
-    - Dar y quitar un "like" a una foto.
-    - De forma opcional:
-
-      - Gestionar su perfil (hacer cambios en los datos de registro).
-      - Comentar una foto (no se permiten comentarios a comentarios).
-
-## PLANTEAMIENTO DEL PROYECTO:
-
-El proyecto consta de dos carpetas principales:
-
-- Carpeta "Client": Contiene todos los archivos del frontend.
-- Carpeta "Server": Contiene todos los archivos del backend.
+- Carpeta _"documentation"_: contiene toda la documentación complementaria.
+- Carpeta _"Client"_: contiene todos los archivos del frontend.
+- Carpeta _"Server"_: contiene todos los archivos del backend.
 
 Teniendo en cuenta los requisitos mínimos, y partiendo del backend que desarrollamos como proyecto anterior, planteamos el proyecto de la siguiente manera:
 
-### 1. DISEÑO DE UN WIDEFRAME:
+### **2.1. DISEÑO DE UN WIDEFRAME:**
 
-- Utilizando la aplicación "FIGMA" diseñamos un wideframe provisional de nuestra aplicación (se puede consultar dentro de la carpeta "server / documentation / wideframe").
+- Utilizando la aplicación "FIGMA" diseñamos un wideframe provisional de nuestra aplicación (se puede consultar dentro de la carpeta _"server / documentation / wideframe"_).
 
-- Elegimos un nombre para nuestra aplicación, que fuese definitorio de la misma. Optamos por LeJoGram como una fusión de Leticia + Jose + Instagram.
+- Elegimos un nombre para nuestra aplicación, que fuese definitorio de la misma. Optamos por _**LeJoGram**_ como una fusión de Leticia + Jose + Instagram.
 
 - Diseñamos un logotipo que evoque la esencia de nuestra app, es decir, la fotografía.
 
 - Creamos el favicon en base al logotipo.
 
-### 2. CREACIÓN DEL PROYECTO DE REACT:
+### **2.2. CREACIÓN DEL PROYECTO DE REACT:**
 
 Pese a que en nuestra formación trabajamos con "npx create-react-app" en este caso quisimos utilizar VITE para enfrentarnos a una forma distinta de trabajar con React. Por tanto los documentos que antes eran .js ahora son .jsx.
 
-### 3. ESTRUCTURA INTERNA DEL PROYECTO:
+### **2.3. ESTRUCTURA INTERNA DEL FRONTEND (carpeta _"client"_):**
 
-#### 3.1 CARPETA "PUBLIC":
+En la raíz de la carpeta _"client"_ contamos con diversos archivos. Los más destacables son:
 
-La carpeta "public" contiene todos los archivos que tienen que ver con imágenes:
+- **README.md:** este es el readme correspondiente al FRONTEND.
+- **index.html** es el html base del proyecto.
+
+#### **2.3.1 CARPETA _"public"_:**
+
+La carpeta _"public"_ contiene todos los archivos que tienen que ver con imágenes:
 
 - Flechas de dirección (izda y dcha), diseñadas por nosotros, que usaremos como botones para los slider de fotografías.
 - Favicon, diseñado por nosotros.
 - Logotipo LeJoGram, diseñado por nosotros.
-- Carpeta "avatars", que contiene 16 fotos de perfil (el usuario podrá elegir uno de estos 16 avatares).
+- Carpeta _"avatars"_, que contiene 16 fotos de perfil (el usuario podrá elegir uno de estos 16 avatares).
 - Icono de corazón para los likes.
 
-#### 3.2 CARPETA "src":
+#### **2.3.2 CARPETA _"src"_:**
 
-En la raíz de la carpeta "src" tenemos los siguientes archivos y carpetas:
+En la raíz de la carpeta _"src"_ tenemos los siguientes archivos y carpetas:
 
 - **TokenContext.jsx:** (EXTRA) Componente en el que creamos un contexto para evitar mandar como props el token del usuario a los diversos componentes en los que se usa. | ACTUALIZACIÓN: Decidimos enviar también a través del contexto los datos del usuario logueado para mayor comodidad en el código del componente OwnProfile.
 - **main.jsx + index.css:** En el componente main establecemos App.jsx como componente principal. En este caso va rodeado de "BrowserRouter" y "TokenProvider" para poder establecer en él las "Routes" y para que el token esté disponible en todos los componentes que deriven de App.jsx.
@@ -82,8 +58,8 @@ En la raíz de la carpeta "src" tenemos los siguientes archivos y carpetas:
   - Una llamada al componente "Header".
   - Establece "Routes" que contendrá diversas "Route" a diversos componentes.
   - Una llamada al componente "Footer".
-- **Carpeta "Data":** (EXTRA) Esta carpeta contiene un único archivo llamado "AvatarList.json" en el que tenemos un array de objetos con los id de cada una de las 16 fotografías de avatar (las cuales están en la carpeta "avatars" de dentro de la carpeta "public").
-- **Carpeta "components":** Esta carpeta contiene, a su vez, 11 carpetas. Cada una de estas carpetas contiene el .jsx y el .css de cada componente que deriva del componente App.jsx.
+- **Carpeta _"Data"_:** (EXTRA) Esta carpeta contiene un único archivo llamado "AvatarList.json" en el que tenemos un array de objetos con los id de cada una de las 16 fotografías de avatar (las cuales están en la carpeta "avatars" de dentro de la carpeta "public").
+- **Carpeta _"components"_:** Esta carpeta contiene, a su vez, 11 carpetas. Cada una de estas carpetas contiene el .jsx y el .css de cada componente que deriva del componente App.jsx.
 
   - **Header:** El header siempre muestra el logo y nombre de nuestra app y diversos botones que cambian en función de si el usuario está o no logueado.
     - Si el usuario NO está logueado:
@@ -115,52 +91,26 @@ En la raíz de la carpeta "src" tenemos los siguientes archivos y carpetas:
   - **OwnProfile:** (EXTRA) Componente muy similar a "Profile" pero con algunas diferencias. Este es el perfil del usuario que está logueado. Además de lo mostrado en "Profile" se muestra el email del usuario, botones para modificar los datos de usuario y otro para borrar el usuario. | ACTUALIZACIÓN: dado que en el componente Profile.jsx ya se muestran las fotos, hemos decidido no mostrarlas en OwnProfile.jsx. | ACTUALIZACIÓN: Hemos decidio hacer window.location.reload(); tras cada modificación de datos de usuario para que el OwnProfile se pinte correctamente con los nuevos datos.
   - **Footer:** Compoente en el que se muestra el copyright de la aplicacón.
 
-### 4. MODIFICACIONES DEL BACKEND:
+### **2.4 MODIFICACIONES DEL BACKEND:**
 
 Para poder llevar a cabo el proyecto e implementar todo lo necesario y los EXTRAS, hemos tenido que modificar algunos controladores y querys del backend, así como crear otros nuevos.
 
-La lista final de controladores y querys es la siguiente:
+Puedes consultar la lista final de controladores y querys en el archivo "README.md" de la carpeta _"server"_:
 
-#### 4.1 ENDPOINTS PARA USERS:
+#
 
-```
-//--------------------------------------------------------------------------
-1. Registro de Usuario (POST a /users) - createUserController + createUserInDbQuery
-//--------------------------------------------------------------------------
-2. Login de Usuario (POST a /users/login) - loginUserController + selectUserByEmailInDbQuery
-//--------------------------------------------------------------------------
-3. Profile (GET a /users/:id) - isAuthOptional + getUserController + selectUserByIdQuery
-//--------------------------------------------------------------------------
-4. OwnProfile (EXTRA) (GET a /users) - isAuthOptional + getOwnUserController + selectUserByIdQuery
-//--------------------------------------------------------------------------
-5. Borrar usuario (EXTRA) (DELETE a /users) - isAuth + deleteUserController + deleteUserQuery
-//--------------------------------------------------------------------------
-6a. Modificar nombre de usuario (PUT /users/username) - isAuth + changeUserNameController + changeUserNameInDbQuery
-//--------------------------------------------------------------------------
-6b. Modificar email de usuario (PUT /users/email) - isAuth + changeUserEmailController + changeUserEmailInDbQuery
-//--------------------------------------------------------------------------
-6c. Modificar avatar de usuario (PUT /users/avatar) - isAuth + changeUserAvatarController + changeUserAvatarInDbQuery
-//--------------------------------------------------------------------------
-```
+## **3. INSTALACIÓN Y CONFIGURACIÓN:**
 
-#### 4.2 ENDPOINTS PARA ENTRIES:
+Para ver cómo configurar tanto el FRONTEND como el BACKEND de _**LeJoGram**_ consulta el archivo README.md que encontrarás en la raíz del respositorio (a la altura de las carpetas _"documentation"_, _"server"_ y _"client"_).
 
-```
-//--------------------------------------------------------------------------
-1. CreateEntry (POST /entries) - isAuth + newEntryController + createNewEntryAndPhotosInDbQuery
-//--------------------------------------------------------------------------
-2. EntrySearch (GET /entries) - isAuthOptional + listEntriesController + selectAllEntriesQuery
-//--------------------------------------------------------------------------
-3. Entry (GET /entries/:id) - isAuthOptional + entryExists + getEntryByIdController + getEntrieAndPhotosFromDbQuery
-//--------------------------------------------------------------------------
-4. Borrar Entry (EXTRA) (DELETE /entries/:id) - isAuth + entryExists + deleteEntryController + deleteEntryQuery
-//--------------------------------------------------------------------------
-5. Dar like a una Entry (POST /entries/:id/likes) - isAuth + entryExists + doLikeController + createLikeInDbQuery
-//--------------------------------------------------------------------------
-6. Quitar likea a una Entry (DELETE /entries/:id/likes) - isAuth + entryExists + deleteLikeController + deleteLikeInDbQuery
-//--------------------------------------------------------------------------
-7. Comments (POST /entries/:id/comment) - isAuth + entryExists + createCommentController + deleteLikeInDbQuery
-//--------------------------------------------------------------------------
-8. (EN DESUSO) (GET /comments) - isAuthOptional + listCommentsController + selectAllCommentsQuery
-//--------------------------------------------------------------------------
-```
+#
+
+## **4. CONTACTO:**
+
+### Jose Luis Modroño Berdiñas: "[Link al perfil de LinkedIn de Jose Luis](https://www.linkedin.com/in/joseluismodro%C3%B1oberdi%C3%B1as/)"
+
+### Leticia Pérez Sanz: "[Link al perfil de LinkedIn de Leticia](https://www.linkedin.com/in/leticia-perez-sanz-89d/)"
+
+#
+
+# &copy;2023
